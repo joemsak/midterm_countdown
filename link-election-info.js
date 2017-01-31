@@ -1,3 +1,6 @@
+//sheltered-escarpment-31930.herokuapp.com
+//localhost:3000
+
 (function() {
   if (!navigator.geolocation)
     return;
