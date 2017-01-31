@@ -1,5 +1,6 @@
 $(document).ready(function(){
-  var date = new Date("November 06, 2018 12:01:00");
+  var tzOffset = new Date().getTimezoneOffset();
+  var date = new Date("November 06, 2018 07:00:00 " + tzOffset);
   var now = new Date();
   var diff = (date.getTime()/1000) - (now.getTime()/1000);
 
