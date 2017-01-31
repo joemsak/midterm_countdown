@@ -2,9 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
     <title>Midterm Countdown</title>
     <link rel='stylesheet' type='text/css' href='reset.css'>
-    <link rel='stylesheet' type='text/css' href='style.css'>
+    <link rel='stylesheet' type='text/css' href='flipclock.css'>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -12,60 +13,62 @@
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous"
     />
-    <link rel='stylesheet' type='text/css' href='flipclock.css'>
+    <link rel='stylesheet' type='text/css' href='style.css'>
   </head>
   <body>
-    <div class="header">
-      <h1>Countdown to<br> Midterm<br> Elections</h1>
-    </div>
-
-    <div class="clock_box">
-      <div class="clock"></div>
-    </div>
-
-    <div class="election-info-links">
-      <div id="senate-link">
-        <a
-          class="election-info-btn"
-          href="https://en.wikipedia.org/wiki/United_States_Senate_elections,_2018#Complete_list_of_races"
-          target="_blank"
-        >
-          <i class="fa fa-star" aria-hidden="true"><!-- Font-Awesome --></i>
-
-          <span class="text">2018 U.S. Senate Elections</span>
-
-          <span class="loading">
-            <i class="fa fa-spinner fa-pulse fa-fw"><!-- FontAwesome Spinner --></i>
-            Searching for your state info...
-          </span>
-
-          <i class="fa fa-star" aria-hidden="true"><!-- Font-Awesome --></i>
-        </a>
+    <div class="container">
+      <div class="header">
+        <h1>2018 Midterms Countdown</h1>
       </div>
 
-      <div id="house-link">
-        <a
-          class="election-info-btn"
-          href="https://en.wikipedia.org/wiki/United_States_House_of_Representatives_elections,_2018#Complete_list_of_elections"
-          target="_blank"
-        >
-          <i class="fa fa-star" aria-hidden="true"><!-- Font-Awesome --></i>
+      <div class="clock_box">
+        <div class="clock"></div>
+      </div>
 
-          <span class="text">2018 U.S. House Elections</span>
+      <div class="election-info-links">
+        <div id="senate-link">
+          <a
+            class="election-info-btn"
+            href="https://en.wikipedia.org/wiki/United_States_Senate_elections,_2018#Complete_list_of_races"
+            target="_blank"
+          >
+            <i class="fa fa-star" aria-hidden="true"><!-- Font-Awesome --></i>
 
-          <span class="loading">
-            <i class="fa fa-spinner fa-pulse fa-fw"><!-- FontAwesome Spinner --></i>
-            Searching for your state info...
-          </span>
+            <span class="text">2018 U.S. Senate Elections</span>
 
-          <i class="fa fa-star" aria-hidden="true"><!-- Font-Awesome --></i>
-        </a>
+            <span class="loading">
+              <i class="fa fa-spinner fa-pulse fa-fw"><!-- FontAwesome Spinner --></i>
+              Searching for your state info...
+            </span>
+
+            <i class="fa fa-star" aria-hidden="true"><!-- Font-Awesome --></i>
+          </a>
+        </div>
+
+        <div id="house-link">
+          <a
+            class="election-info-btn"
+            href="https://en.wikipedia.org/wiki/United_States_House_of_Representatives_elections,_2018#Complete_list_of_elections"
+            target="_blank"
+          >
+            <i class="fa fa-star" aria-hidden="true"><!-- Font-Awesome --></i>
+
+            <span class="text">2018 U.S. House Elections</span>
+
+            <span class="loading">
+              <i class="fa fa-spinner fa-pulse fa-fw"><!-- FontAwesome Spinner --></i>
+              Searching for your state info...
+            </span>
+
+            <i class="fa fa-star" aria-hidden="true"><!-- Font-Awesome --></i>
+          </a>
+        </div>
       </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="flipclock.js"></script>
-    <script src="link-election-info.js"></script>
+    <!-- <script src="link-election-info.js"></script> -->
     <script src="main.js"></script>
   </body>
 </html>

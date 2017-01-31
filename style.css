@@ -1,29 +1,46 @@
-body {
-  background-color: black;
+* {
+  box-sizing: border-box;
 }
 
-.header {
-  margin: 1em 10%;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 5em;
+body,
+html {
+  background: #0D0B40;
+  height: 100%;
   color: white;
 }
 
+.header {
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 3rem 0;
+  text-transform: uppercase;
+  text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
 .clock_box {
-  margin: 0 10%;
+  background: #14105E;
+  padding: 1rem 0;
 }
 
-.flip-clock-wrapper {
-  margin: 0!important;
+.clock {
+  padding: 2.5em 0 1rem 0;
+  margin: 0;
+  border: dotted #990808;
+  border-width: 2px 0;
 }
 
-.flip-clock-wrapper ul li a div div.inn {
-  color: black!important;
-  background-color: white!important;
+.clock {
+  display: flex;
+  justify-content: center;
 }
 
-.flip-clock-wrapper ul li a div.up:after {
-  display: none!important;
+.flip-clock-divider .flip-clock-label {
+  color: white;
+  text-transform: uppercase;
 }
 
 .election-info-links {
@@ -93,4 +110,24 @@ body {
 
 .election-info-btn.loading .text {
   display: none;
+}
+
+@media (max-width: 750px) {
+  .header {
+    padding: 1rem;
+  }
+
+  .election-info-links {
+    flex-wrap: wrap;
+  }
+
+  .election-info-links > div {
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .flip-clock-dot {
+    display: none;
+  }
 }
